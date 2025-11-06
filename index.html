@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isuri M. Panamaldeniye | Portfolio</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #0d1117; color: #e6edf3; line-height: 1.6;
+    }
+    section { padding: 80px 10%; }
+    h2 { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #00bcd4; }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      background: #161b22; padding: 15px 10%;
+      display: flex; justify-content: space-between; align-items: center;
+      position: fixed; width: 100%; top: 0; z-index: 100;
+    }
+    nav h1 { color: #00bcd4; font-size: 1.4rem; }
+    nav ul { display: flex; list-style: none; gap: 25px; }
+    nav ul li a { color: #e6edf3; font-weight: 500; transition: 0.3s; }
+    nav ul li a:hover { color: #00bcd4; }
+
+    /* ===== HERO ===== */
+    .hero { height: 100vh; display: flex; align-items: center; justify-content: space-between; padding: 0 10%; flex-wrap: wrap; }
+    .hero-text { max-width: 600px; }
+    .hero-text h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .hero-text span { color: #00bcd4; }
+    .hero-text p { margin-bottom: 20px; }
+    .hero-text button { background: #00bcd4; color: white; border: none; padding: 10px 25px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+    .hero-text button:hover { background: #0097a7; }
+    .hero img { width: 320px; border-radius: 50%; border: 3px solid #00bcd4; }
+
+    /* ===== ABOUT ===== */
+    .about p { max-width: 800px; margin: auto; text-align: center; font-size: 1.05rem; }
+
+    /* ===== SKILLS ===== */
+    .skills-container { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 20px; }
+    .skill { background: #161b22; padding: 20px; border-radius: 8px; text-align: center; transition: 0.3s; }
+    .skill:hover { transform: translateY(-5px); }
+
+    /* ===== PROJECTS ===== */
+    .projects-container { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 25px; }
+    .project { background: #161b22; padding: 20px; border-radius: 8px; }
+    .project h3 { color: #00bcd4; margin-bottom: 10px; }
+
+    /* ===== CERTIFICATES & ACHIEVEMENTS ===== */
+    .list { display: flex; flex-direction: column; gap: 15px; max-width: 800px; margin: auto; }
+    .list li { background: #161b22; padding: 15px; border-radius: 6px; }
+
+    /* ===== CONTACT ===== */
+    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+    input, textarea { padding: 10px; border: none; border-radius: 6px; background: #1f2937; color: white; }
+    button[type="submit"] { background: #00bcd4; color: white; padding: 10px; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; }
+    button[type="submit"]:hover { background: #0097a7; }
+
+    footer { text-align: center; padding: 20px; background: #161b22; color: #999; }
+
+    @media(max-width:768px){
+      .hero{flex-direction:column-reverse;text-align:center;padding-top:100px;}
+      .hero img{width:220px;margin-bottom:15px;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h1>Isuri M. Panamaldeniye</h1>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Isuri M. Panamaldeniye</span></h1>
+      <p>Goal-oriented <strong>Project Manager Intern</strong> skilled in leadership, communication, planning, risk control, teamwork, and time management.  
+      Passionate about <strong>Cybersecurity</strong>, <strong>Quality Assurance</strong>, and <strong>Software Engineering</strong>.</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+    </div>
+    <img src="profile.png" alt="Isuri M. Panamaldeniye".png" alt="Profile">
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am an undergraduate at <strong>Uva Wellassa University of Sri Lanka</strong>, pursuing a Bachelor of Science in Industrial Information Technology (GPA 3.72).  
+    I’m a computer science enthusiast driven to integrate technology, management, and innovation to create reliable and secure solutions.  
+    I thrive in team-oriented environments and aim to grow as a professional in Cybersecurity, Project Management, and Software Quality Assurance.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill">Python, Java, C, C++</div>
+      <div class="skill">HTML, CSS, JavaScript</div>
+      <div class="skill">MySQL, PostgreSQL, MongoDB</div>
+      <div class="skill">Git, GitHub, CI/CD</div>
+      <div class="skill">Software Testing (Selenium)</div>
+      <div class="skill">OOP, UML, Data Mapping</div>
+      <div class="skill">Power BI, Tableau</div>
+      <div class="skill">Blockchain & Security Concepts</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>Deep Neural Network–Based Video Watermarking</h3>
+        <p>Research project developing a hybrid DNN-based video watermarking system with per-viewer tracking and adaptive attack robustness testing.</p>
+        <p><strong>Tech:</strong> Python, PyTorch, OpenCV, NumPy, FFmpeg</p>
+      </div>
+      <div class="project">
+        <h3>Drop Here</h3>
+        <p>Led development of a web and mobile platform for ride-sharing and goods transport using unused private vehicle space. Managed under Waterfall model.</p>
+        <p><strong>Tech:</strong> React, PHP, MySQL, Flutter, GitHub, Postman</p>
+      </div>
+      <div class="project">
+        <h3>Tawtheeq – Contract Verifier with Blockchain Security</h3>
+        <p>Managed mobile-first contract management platform with blockchain verification, AI assistance, and secure digital signing using Agile methodology.</p>
+        <p><strong>Tech:</strong> Flutter, Next.js, Node.js, PostgreSQL, Polygon Blockchain</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <ul class="list">
+      <li>Cybersecurity for Businesses – EC Council</li>
+      <li>Introduction to Cybersecurity Awareness – HP LIFE</li>
+      <li>Introduction to Selenium – Simplilearn</li>
+      <li>Introduction to Power BI – Microsoft</li>
+      <li>Oracle AI Vector Search Certified – Oracle</li>
+      <li>GitHub Foundation Certification – GitHub</li>
+      <li>Data Science & Analytics – HP LIFE</li>
+      <li>ICTT NVQ Level 4 – NYSC, SL</li>
+    </ul>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul class="list">
+      <li>Dean’s List for Outstanding Academic Performance (Uva Wellassa University)</li>
+      <li>EngWrangle 1.0 Debate Competition – First Runner-Up</li>
+      <li>IEEE INSL Uva Provincial Competition 2023 – Second Runner-Up</li>
+    </ul>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership">
+    <h2>Leadership Experiences</h2>
+    <ul class="list">
+      <li>Secretary – IEEE Computer Science Society, UWU (2024–2025)</li>
+      <li>Marketing & PR Team Lead – FOSS Community, UWU (2024–2025)</li>
+      <li>Assistant Secretary – IEEE CS Society, UWU (2024–2025)</li>
+      <li>Secretary – Career Guidance Unit, UWU (2024–2025)</li>
+      <li>Vice President (Membership Avenue) – Gavel Club, UWU (2024–2025)</li>
+      <li>Content Editor – Leo Club, UWU (2022–2023)</li>
+    </ul>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section id="languages">
+    <h2>Languages</h2>
+    <ul class="list">
+      <li>English – Fluent</li>
+      <li>Sinhala – Fluent</li>
+      <li>Tamil – Intermediate</li>
+      <li>French – Intermediate</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Isuri M. Panamaldeniye | Kandy, Sri Lanka | isuripanamaldeniye.work@gmail.com</p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you for reaching out! I will get back to you soon.');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
